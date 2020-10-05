@@ -9,12 +9,12 @@
                 class="text-center"
                 cols="12"
             >
-                <h2>Choisissez votre personnage</h2>
+                <h2 id="characters">Choisissez votre personnage</h2>
             </v-col>
         </v-row>
         <v-row>
             <v-card
-                v-for="character in characters" :key="character"
+                v-for="character in characters" :key="character.name"
                 class="mx-auto"
                 max-width="344"
             >
@@ -63,12 +63,6 @@
                 description: "Léodagan (ou Léo De Grand) est, dans la légende arthurienne, généralement le père de Guenièvre et donc le beau-père d'Arthur Pendragon, roi des Bretons. Léodagan est également roi de Carmélide, et gardien de la Table Ronde après la mort d'Uther Pendragon, père et prédécesseur d'Arthur.",
                 actor: "Lionnel Astier",
                 photo: "https://i.skyrock.net/7673/72107673/pics/2851683178_1.jpg"
-            },
-            {
-                name: "Guenièvre",
-                description: "La reine Guenièvre est un personnage de la légende arthurienne, femme du roi Arthur. Sa relation adultère avec Lancelot du Lac est un thème récurrent du cycle. Figure archétypale de la dame courtoise, fée, déesse, Guenièvre est un personnage aux multiples facettes.",
-                actor: "Anne Girouard",
-                photo: "https://64.media.tumblr.com/386ad52b484ceb981d7c9996e9c45b67/2e049c6efdff9d91-9d/s1280x1920/f8e69b65e3666a175d90c2c3682bd6232dd700f4.png"
             },
             {
                 name: "Perceval",
