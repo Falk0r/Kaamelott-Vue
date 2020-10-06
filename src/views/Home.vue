@@ -34,7 +34,6 @@ export default {
     }),
   methods : {
     choice(character){
-      console.log(character);
       router.push({name: 'Character', params: {name: character}})
     }
   }
