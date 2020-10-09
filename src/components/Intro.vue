@@ -1,9 +1,9 @@
 <template>
-    <v-container>
+    <v-container class="intro">
         <v-row
             align="center"
             justify="center"
-            class="title"
+            class="sub-title"
         >
             <v-col
                 class="text-center"
@@ -15,7 +15,7 @@
                 <v-row
             align="center"
             justify="center"
-            class="title"
+            class="intro-content"
         >
             <v-col
                 class="text-right"
@@ -23,19 +23,15 @@
             >
             <p>
                 Venez découvrir les plus belles citations de votre série préféré.
-                Ici vous aurez le choix de votre personnage et aurez accès à ses meilleurs citations écrites et audio (en cours de développement.)
+                Cette application vous permet de retrouver les citations cultes de la séries Kaamelott.
+                Nous vous proposons deux types de citation : écrite et audio.
             </p>
             </v-col>
             <v-col cols="4" class="d-flex justify-center">
-                <img
-                    :src="image"
-                    height="300"
-                    width="300"
-                >
+                <img :src="image">
             </v-col>
         </v-row>  
     </v-container>
-
 </template>
 
 <script>
@@ -48,8 +44,18 @@
 
 </script>
 
-<style scoped>
-.title{
+<style>
+.intro{
+    height: 40vh;
+}
+.intro-content{
+    height: 30vh;
+}
+.intro-content .d-flex, .intro-content img{
+    height: 100%;
+}
+
+.sub-title{
     height: 5vh;
 }
 

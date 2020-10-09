@@ -4,6 +4,7 @@
     <Title/>
     <Parallax :image="imageParallax.image2"/>
     <Intro/>
+    <Choices/>
     <!-- <Characters :choice="choice" /> -->
   </div>
 </template>
@@ -13,8 +14,10 @@
 import Parallax from '../components/Parallax';
 import Title from '../components/Title';
 import Intro from '../components/Intro';
+import Choices from '../components/Choices'
 // import Characters from '../components/Characters';
 import router from '../router/index'
+
 
 
 export default {
@@ -23,6 +26,7 @@ export default {
     Parallax,
     Title,
     Intro,
+    Choices,
     // Characters,
   },
   data: () => ({

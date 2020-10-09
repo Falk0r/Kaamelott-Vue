@@ -31,11 +31,8 @@
   }
 </script>
 
-
-<style lang="less">
-  body{
-    .title {
-      height: 20vh;
-    }
-  }
+<style>
+.title{
+  height: 20vh;
+}
 </style>
