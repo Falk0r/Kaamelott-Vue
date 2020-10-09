@@ -47,3 +47,10 @@
   }
 
 </script>
+
+<style scoped>
+.title{
+    height: 5vh;
+}
+
+</style>
