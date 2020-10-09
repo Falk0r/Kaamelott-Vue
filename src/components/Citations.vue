@@ -3,6 +3,7 @@
     <v-row
         align="center"
         justify="center"
+        class="citations"
     >
         <v-col cols="6">
             <v-carousel v-model="model" hide-delimiters :show-arrows="false">
@@ -34,6 +35,7 @@
     </v-row>
     <v-row
         justify="center"
+        class="controls"
     >
         <v-col cols="3" :style="'text-align: center;'">
             <v-btn color="primary" @click="getQuote">citations</v-btn>
@@ -58,7 +60,7 @@ export default {
   },
   props: ['image'],
   data: () => ({
-      citations : ['Cliquer sur "citation"'],
+      citations : ['Cliquer sur "citations"'],
       image: "https://static.hitek.fr/img/actualite/2016/06/16/fb_gdwe51vl.jpg",
       model: 0,
     }),
@@ -90,10 +92,19 @@ export default {
 
 
 <style>
-    .v-application p{
+    .display-1 p{
         margin: 30px;
         text-shadow: 2px 2px 2px black;
         font-size: 0.8em;
+    }
+    .citations{
+        height: 80vh;
+        background: rgb(148,148,148);
+        background: linear-gradient(180deg, rgba(148,148,148,1) 55%, rgba(255,255,255,0) 35%);
+        
+    }
+    .controls{
+        height: 10vh;
     }
     .citation{
         position: relative;
