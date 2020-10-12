@@ -15,7 +15,7 @@
                     height="100%"
                     min-width="700"
                     dark
-                    :style="'background-image: url(' + picture + ');'"
+                    :style="'background-image: url(' + image + ');'"
                     class="carousel"
                     color="black"
                 >
@@ -48,9 +48,7 @@
 </template>
 
 <script>
-
 import router from '../router/index'
-
 export default {
   name: 'Citations',
   components: {
@@ -58,7 +56,6 @@ export default {
   props: ['image'],
   data: () => ({
       citations : ['Cliquer sur "citations"'],
-      picture: "https://static.hitek.fr/img/actualite/2016/06/16/fb_gdwe51vl.jpg",
       model: 0,
     }),
     methods: {
@@ -68,15 +65,12 @@ export default {
                 method: 'get',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Origin' : "https://kaamelott.onrender.com/",
                 },
                 mode: 'cors',
             })
             fetch(request).then(response => {
                 return response.json();
             }).then(text => {
-                console.log(text.citation.citation);
-                // this.citations = text.citation.citation;
                 this.citations.push(text.citation.citation);
                 this.model++;
             })
