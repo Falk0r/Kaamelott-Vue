@@ -12,7 +12,7 @@
                 <h2>Bienvenue sur les citations de Kaamelott</h2>
             </v-col>
         </v-row>
-                <v-row
+        <v-row
             align="center"
             justify="center"
             class="intro-content"
@@ -57,6 +57,9 @@
 
 .sub-title{
     height: 5vh;
+}
+h2{
+    font-size: 2.5rem;
 }
 
 </style>

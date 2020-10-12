@@ -33,7 +33,7 @@
                 ></div>      
             </v-col>
         </v-row>
-    <audio :src="citation" autoplay id="myAudio"></audio>
+        <audio :src="citation" autoplay id="myAudio"></audio>
     </v-container>
 </template>
 
@@ -54,8 +54,6 @@ export default {
         router.push({name: 'Home'})
         },
         target(el){
-            console.log(el);
-            // console.log(files);
             const player = [];
             for (let index = 0; index < files.length; index++) {
                 const element = files[index];
@@ -63,16 +61,14 @@ export default {
                     player.push(element.file);
                 }
             }
-            console.log(player[this.getRandomInt(player.length)]);
             this.citation = "https://kaamelott-soundboard.2ec0b4.fr/sounds/" + player[this.getRandomInt(player.length)];
         },
-        getRandomInt(max) {
+        getRandomInt(max){
             return Math.floor(Math.random() * Math.floor(max));
         },
     },
 }
 </script>
-
 
 <style>
     .playground{

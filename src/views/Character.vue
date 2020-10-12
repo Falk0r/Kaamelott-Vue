@@ -1,7 +1,5 @@
 <template>
-  <div class="citations">
     <Citations :image="image" />
-  </div>
 </template>
 <script>
 
@@ -13,7 +11,7 @@ export default {
       Citations
   },
   data: () => ({
-    images : null
+    image : null
     }),
   beforeMount () {
       switch (this.$route.params.name) {

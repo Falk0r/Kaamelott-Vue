@@ -5,7 +5,7 @@
     <Parallax :image="imageParallax.image2"/>
     <Intro/>
     <Choices/>
-    <!-- <Characters :choice="choice" /> -->
+    <Footer :picture="picture" />
   </div>
 </template>
 
@@ -15,7 +15,7 @@ import Parallax from '../components/Parallax';
 import Title from '../components/Title';
 import Intro from '../components/Intro';
 import Choices from '../components/Choices'
-// import Characters from '../components/Characters';
+import Footer from '../components/Footer'
 import router from '../router/index'
 
 
@@ -27,14 +27,15 @@ export default {
     Title,
     Intro,
     Choices,
-    // Characters,
+    Footer,
   },
   data: () => ({
     imageParallax:
       {
-        image1 : "https://actugeekgaming.com/wp-content/uploads/2019/01/thumb-1920-806749.jpg",
-        image2 : "https://img.filmsactu.net/datas/series/k/a/kaamelott/xl/kaamelott-5638c66448079.jpg"
+        image1 : "https://aws.vdkimg.com/tv_show/6/0/6/1/60614_backdrop_scale_1280xauto.jpg",
+        image2 : "https://img.filmsactu.net/datas/series/k/a/kaamelott/xl/kaamelott-5638c66448079.jpg",
       },
+    picture : 'https://i25.servimg.com/u/f25/16/45/41/90/kaamel10.png'
     }),
   methods : {
     choice(character){

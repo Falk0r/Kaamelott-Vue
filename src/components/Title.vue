@@ -1,4 +1,5 @@
 <template>
+  <v-container>
     <v-row
       align="center"
       justify="center"
@@ -8,17 +9,18 @@
         class="text-center"
         cols="12"
       >
-        <h1 class="display-1 font-weight-thin mb-4">
+        <h1>
           {{text}}
         </h1>
-        <h4 class="subheading">
-            {{subText}}
+        <h4>
+          {{subText}}
         </h4>
-        <h3 class="font-weight-thin">
-            L'application
+        <h3>
+          L'application
         </h3>
       </v-col>
     </v-row>
+  </v-container>
 </template>
 
 <script>

@@ -2,6 +2,7 @@
   <v-container
     class="parallax"
     :style="'background-image: url(' + image + ');'"
+    fluid
   >
   </v-container>
 </template>
@@ -13,13 +14,12 @@
   }
 </script>
 
-<style lang="less" scoped>
+<style>
   .parallax {
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       height: 80vh;
-      max-width: 100%;
   }
 </style>

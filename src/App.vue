@@ -10,12 +10,12 @@
 
 export default {
   name: 'App',
-
-  components: {
-  },
-
-  data: () => ({
-    //
-  }),
 };
 </script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+
+html, body,h2, h1, h3, h4 {
+  font-family: 'Marcellus SC', serif;
+}
+</style>

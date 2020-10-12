@@ -17,16 +17,16 @@
                 v-for="character in characters" :key="character.name"
                 class="mx-auto"
                 max-width="344"
+                light
             >
                 <v-img
                 :src="character.photo"
                 height="200px"
-                ></v-img>
-
+                >
+                </v-img>
                 <v-card-title>
                     {{character.name}}
                 </v-card-title>
-
                 <v-card-subtitle>
                     {{character.actor}}
                 </v-card-subtitle>
@@ -81,3 +81,10 @@
     props : ['choice'],
   }
 </script>
+
+<style>
+
+.mx-auto{
+    background-color: ivory;
+}
+</style>
