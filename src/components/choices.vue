@@ -57,7 +57,7 @@
 <script>
 
 import Characters from '../components/Characters';
-import router from '../router/index'
+import router from '../router/index';
 
 export default {
   name: 'Choices',

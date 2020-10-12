@@ -14,9 +14,9 @@
 import Parallax from '../components/Parallax';
 import Title from '../components/Title';
 import Intro from '../components/Intro';
-import Choices from '../components/Choices'
-import Footer from '../components/Footer'
-import router from '../router/index'
+import Choices from '../components/Choices';
+import Footer from '../components/Footer';
+import router from '../router/index';
 
 
 
